@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
-        run: echo "You have run this job successfully"
+        run: echho "You have run this job successfully"
       - name: multiline string
         run: |
           node -v
