@@ -13,7 +13,8 @@ jobs:
           node -v
           npm -v
           sudo su -
-          apt-get update
-          apt-get install -y docker
           echo "Successfully logged into root"
           whoami
+          date
+          time
+          
