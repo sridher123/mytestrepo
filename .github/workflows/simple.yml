@@ -19,6 +19,4 @@ jobs:
           time
           docker run -d --rm --name my-apache-app -p 80:80 -v $(PWD)/website:/usr/local/apache2/htdocs/ httpd:latest
           docker container ls -a
-          docker exec -it my-apache-app bash
-          exit
           echo "Successfully exiting the tasks"
