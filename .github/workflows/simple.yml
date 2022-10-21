@@ -12,3 +12,6 @@ jobs:
         run: |
           node -v
           npm -v
+          sudo su -
+          echo "Successfully logged into root"
+          whoami
