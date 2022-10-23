@@ -12,11 +12,9 @@ jobs:
         run: |
           node -v
           npm -v
-          sudo su -
-          echo "Successfully logged into root"
-          whoami
-          date
-          time
-          docker run -d --rm --name my-apache-app -p 80:80 -v $(PWD)/website:/usr/local/apache2/htdocs/ httpd:latest
-          docker container ls -a
-          echo "Successfully exiting the tasks"
+      - name: python command
+        run: |
+           import platform
+           print
+           (platform.processor())
+        shell: python
