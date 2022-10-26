@@ -10,6 +10,7 @@ jobs:
         id: greet
         uses: sridher123/mytestrepo@v1.0
         with:
+          repository: ./.github/workflows/action.yml
           who-to-greet: VenkatramanB
       - name: Log Greeting Time
         run: echo "${{ steps.greet.outputs.time}}"
