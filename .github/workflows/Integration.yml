@@ -1,0 +1,11 @@
+name: My-First-Build
+
+on: [push]
+jobs:
+  first-job:
+    runs-on: Ubuntu-latest
+    container: node:17.6.0
+    steps:
+      - run: node --version
+      - run: npm --version
+
