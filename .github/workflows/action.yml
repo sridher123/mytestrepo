@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greet
-        uses: sridher123/mytestrepo@vv1
+        uses: sridher123/mytestrepo@v1
         with:
           who-to-greet: Venkatraman
       - name: Log Greeting Time
