@@ -6,11 +6,10 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: Simple JS Action
-        id: greet
-        uses: actions/checkout@v1.0
+      - name: Create Github release
+        uses: actions/create-release@v1.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          repository: ./.github/workflows/action.yml
-          who-to-greet: VenkatramanB
-      - name: Log Greeting Time
-        run: echo "${{ steps.greet.outputs.time}}"
+          tag-name: ${{ github.run_number }}
+          release_name: Release ${{ github.run_number }}
