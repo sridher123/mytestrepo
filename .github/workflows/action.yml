@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Simple JS Action
         id: greet
-        uses: sridher123/mytestrepo@v1.0/action.yml
+        uses: sridher123/mytestrepo/action.yml
         with:
           who-to-greet: VenkatramanB
       - name: Log Greeting Time
